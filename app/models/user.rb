@@ -1,7 +1,8 @@
 class User < ActiveRecord::Base
 
+  has_and_belongs_to_many :courses
   has_many :notes
-  
+
   before_save { self.email.downcase! }
   before_save { self.username.downcase! }
 

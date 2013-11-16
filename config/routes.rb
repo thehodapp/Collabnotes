@@ -1,4 +1,6 @@
 Collabnotes::Application.routes.draw do
+  resources :courses
+
   resources :notes
 
   resources :users
